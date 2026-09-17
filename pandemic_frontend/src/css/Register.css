@@ -1,0 +1,107 @@
+/* =========================================
+   PREMIUM REGISTER PAGE
+========================================= */
+
+.register-form-panel {
+  overflow-y: auto;
+}
+
+.register-card {
+  max-width: 470px;
+}
+
+.register-form {
+  gap: 16px;
+}
+
+.optional-label {
+  margin-left: 6px;
+  color: #94a3b8;
+  font-size: 9px;
+  font-weight: 500;
+}
+
+/* Password Hint */
+
+.password-hint {
+  margin-top: 6px;
+  color: #94a3b8;
+  font-size: 9px;
+}
+
+/* Select */
+
+.premium-select {
+  appearance: none;
+  cursor: pointer;
+  padding-right: 38px;
+}
+
+.premium-select option {
+  color: #0f172a;
+  background: #ffffff;
+}
+
+/* Security Notice */
+
+.security-notice {
+  margin-top: 24px;
+  padding: 13px 14px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  border: 1px solid #e5edf7;
+  border-radius: 12px;
+  background: #f8fafc;
+  color: #2563eb;
+}
+
+.security-notice > svg {
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.security-notice strong {
+  display: block;
+  margin-bottom: 3px;
+  color: #334155;
+  font-size: 10px;
+}
+
+.security-notice span {
+  display: block;
+  color: #94a3b8;
+  font-size: 9px;
+  line-height: 1.5;
+}
+
+/* Slightly tighter desktop registration */
+
+@media (min-width: 901px) {
+  .register-form-panel {
+    padding-top: 38px;
+    padding-bottom: 38px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 900px) {
+  .register-form-panel {
+    overflow-y: visible;
+  }
+
+  .register-card {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .register-form {
+    gap: 16px;
+  }
+
+  .security-notice {
+    margin-top: 20px;
+  }
+}
